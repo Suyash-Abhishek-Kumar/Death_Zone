@@ -51,7 +51,6 @@ public class Projectile : MonoBehaviour
         Vector3 forceToAdd = forceDirection * throwForce + transform.up * throwUpwardForce;
 
         // instantiate object to throw
-        Quaternion q = Quaternion.FromToRotation(Vector3.up, transform.forward);
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
 
         // get rigidbody component
