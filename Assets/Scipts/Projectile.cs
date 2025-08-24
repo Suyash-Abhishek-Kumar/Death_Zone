@@ -42,7 +42,7 @@ public class Projectile : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(cam.position, cam.forward, out hit, 500f, ~LayerMask.GetMask("Player")))
+        if (Physics.Raycast(cam.position, cam.forward, out hit, 500f, ~LayerMask.GetMask("Player", "Gun")))
         {
             forceDirection = (hit.point - attackPoint.position).normalized;
         }

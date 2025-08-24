@@ -8,10 +8,14 @@ public class PlayerCam : MonoBehaviour
     public Transform orientation;
     float xRotation, yRotation;
 
+    [Header("Offset (relative to camera)")]
+    public Vector3 offset = Vector3.zero;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        transform.position = transform.position + offset;
     }
 
     private void Update()
