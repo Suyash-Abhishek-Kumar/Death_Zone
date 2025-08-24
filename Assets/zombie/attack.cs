@@ -32,11 +32,11 @@ public class ZombieAttack : MonoBehaviour
     private void Attack()
     {
         // PlayerHealth should exist on player object
-        PlayerHealth ph = player.GetComponent<PlayerHealth>();
-        if (ph != null)
-        {
-            ph.TakeDamage(stats.GetDamage());
-        }
+        // PlayerHealth ph = player.GetComponent<PlayerHealth>();
+        // if (ph != null)
+        // {
+        //     ph.TakeDamage(stats.GetDamage());
+        // }
 
         Debug.Log(gameObject.name + " attacked player!");
     }
