@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -84,9 +82,17 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            if (projectile.name == "rock")
+            {
+                Rigidbody rb = Instantiate(projectile, transform.position + transform.forward * 1.5f + transform.up * 2f, transform.rotation).GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * 18f, ForceMode.Impulse);
+                rb.AddForce(transform.up * 3f, ForceMode.Impulse);
+            }
+            else if (projectile.name == "Chalk")
+            {
+                Rigidbody rb = Instantiate(projectile, transform.position + transform.forward * 1.5f + transform.up * 0.6f, transform.rotation * Quaternion.Euler(0f, 0f, 90f)).GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * 25f, ForceMode.Impulse);
+            }
             ///End of attack code
 
             alreadyAttacked = true;

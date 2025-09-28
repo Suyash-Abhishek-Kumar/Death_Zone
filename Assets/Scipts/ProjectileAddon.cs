@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ProjectileAddon : MonoBehaviour
 {
-    public int damage;
+    public int bullet_damage = 10;
+    private int rock_damage = 5;
 
     private Rigidbody rb;
 
@@ -24,11 +25,21 @@ public class ProjectileAddon : MonoBehaviour
             targetHit = true;
 
         // check if you hit an enemy
-        if (collision.gameObject.GetComponent<BasicEnemy>() != null)
+        if (collision.gameObject.GetComponentInParent<EnemyAI>() != null)
         {
-            BasicEnemy enemy = collision.gameObject.GetComponent<BasicEnemy>();
+            Debug.Log("here 2" + bullet_damage);
+            EnemyAI enemy = collision.gameObject.GetComponentInParent<EnemyAI>();
 
-            enemy.TakeDamage(damage);
+            enemy.TakeDamage(bullet_damage);
+
+            // destroy projectile
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.GetComponentInParent<Playerhealth>() != null)
+        {
+            Playerhealth player = collision.gameObject.GetComponentInParent<Playerhealth>();
+
+            player.TakeDamage(rock_damage);
 
             // destroy projectile
             Destroy(gameObject);
