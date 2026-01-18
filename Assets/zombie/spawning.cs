@@ -55,7 +55,7 @@ public class ZombieSpawner : MonoBehaviour
             return;
 
         // pick spawn point
-        Vector3 spawnPoint = player.position + Random.insideUnitSphere * spawnRadius;
+        Vector3 spawnPoint = transform.position + Random.insideUnitSphere * spawnRadius;
         spawnPoint.y = 2;
 
         // pick enemy type (weighted random)
