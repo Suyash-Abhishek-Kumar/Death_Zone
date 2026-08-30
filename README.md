@@ -4,7 +4,7 @@
 
 **C# · Unity · Unity Physics · NavMesh · Raycasting**
 
-Death Zone is a 3D first-person shooter prototype developed as part of a college game-development project. I served as the **primary developer** on an 8–9 member multidisciplinary team, working alongside artists and designers. After the team's second developer became unavailable, I took ownership of the game's core programming and implemented the major gameplay systems.
+Death Zone is a 3D first-person shooter prototype developed as part of a college game-development project. I served as the **primary developer** on an 8 member multidisciplinary team, working alongside artists and designers.
 
 ## 🎮 Overview
 
