@@ -49,9 +49,7 @@ Combat combines Unity physics and **raycasting** with reusable projectile, healt
 
 ## 👥 Team & My Contribution
 
-The project was developed by an **8–9 member multidisciplinary team** consisting primarily of programmers, artists, and designers.
-
-I was one of two developers and served as the **primary developer**. When the second developer became unavailable due to an emergency, I implemented the game's core programming and continued coordinating with the rest of the team to integrate art and design work into the playable project.
+The project was developed by an **8 member multidisciplinary team** consisting primarily of programmers, artists, and designers.
 
 ## 🛠 Built With
 
