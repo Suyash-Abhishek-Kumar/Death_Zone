@@ -73,10 +73,6 @@ The Unity project is organized around Unity's standard `Assets`, `Packages`, and
 
 > This project is primarily intended as a development/portfolio project. A standalone build is not currently provided in the repository.
 
-## 📌 Project Context
-
-Developed as a college game-development project through the **Game Development Club at SRM Institute of Science and Technology**.
-
 ---
 
 **Project:** Death Zone  
